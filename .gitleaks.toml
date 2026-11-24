@@ -1,0 +1,13 @@
+title = "SecureWallet secret scanning configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Exclude the local environment file, which is protected by .gitignore and must never be committed."
+paths = ['''^\.env$''']
+
+[[allowlists]]
+description = "Known dummy idempotency keys used only in transaction tests."
+paths = ['''^tests/test_transactions\.py$''']
+regexes = ['''alice-idempotency-00[12]''']
