@@ -1,8 +1,14 @@
 # SecureWallet API
 
-A security-focused simulated digital wallet API built with Python and FastAPI.
+SecureWallet API
 
-SecureWallet demonstrates secure application development practices through authentication, authorization, wallet operations, transaction integrity, audit logging and automated security testing.
+A threat-modelling-led application security engineering project focused on identifying, analysing, and mitigating security risks in a simulated digital wallet application.
+
+The project began with security architecture, data-flow analysis, and STRIDE-based threat modelling to identify potential attack paths, vulnerabilities, and security requirements.
+
+Those findings informed the design and implementation of a Python FastAPI application with security controls covering authentication, authorization, wallet ownership, transaction integrity, input validation, rate limiting, and audit logging.
+
+SecureWallet demonstrates the application security engineering lifecycle, from threat identification and risk analysis through secure implementation, security testing, and technical documentation.
 
 > **Disclaimer:** This is an educational portfolio project. It does not connect to real banking infrastructure or process real money.
 
